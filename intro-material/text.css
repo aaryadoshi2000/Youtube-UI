@@ -1,0 +1,53 @@
+p {
+    font-family: Roboto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.Video-Title{
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.Views {
+    font-size: 14px;
+    color: rgb(60,60,60);
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.Youtuber {
+    color: rgb(60,60,60);
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Description {
+    font-size: 14px;
+    color: rgb(60,60,60);
+    width: 280px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.Footer {
+    background-color: #e34140;
+    color: white;
+
+    margin-bottom: 60px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    
+}
+
+.Link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

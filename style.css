@@ -1,0 +1,338 @@
+p {
+    font-family: Roboto, Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body {
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 96px;
+    margin-right: 26px;
+    background-color: rgb(250, 250, 250);
+}
+
+
+
+
+.Thumbnail {
+    width: 100%;
+    display: block;
+}
+
+
+
+.Channel-Picture {
+    display: block;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.Video-Time {
+    background-color: rgb(0,0,0, 0.9);
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 2px;
+
+}
+
+.Video-Title {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.Video-Author {
+    font-size: 12px;
+    color: rgb(60,60,60);
+    margin-bottom: 4px;
+}
+
+.Video-Stats {
+    font-size: 14px;
+    color: rgb(60,60,60);
+}
+
+.Profile-Picture {
+    display: inline-block;
+}
+
+.Small-Picture {
+    width: 40px;
+    vertical-align: top;
+    border-radius: 50px;
+}
+
+.Video-Info-Grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+
+
+.Video-Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;;
+}
+
+@media (max-width: 750px) {
+    .Video-Grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .Video-Grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    height: 70px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(197, 197, 197);
+
+    border-left: None;
+    border-right: None;
+    border-top: None;
+    z-index: 1;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.Left-Section {
+    display: flex;
+    align-items: center;
+}
+
+.Middle-Section {
+    flex: 1;
+    max-width: 500px;
+    margin-left: 70px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.Right-Section {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.Search-Bar {
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(170, 170, 170);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0, 0.05);
+    width: 0;
+}
+
+.Search-Bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.Hamburger-Menu {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+
+.Youtube-Logo {
+    height: 24px;
+    
+}
+
+.Search-Button,
+.Voice-Search-Button,
+.Upload-Box,
+.Apps-Box,
+.Notifications-Box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.Search-Button {
+    height: 40px;
+    width: 66px;
+    background-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    margin-left: -1px;
+    margin-right: 10px;
+
+    
+    
+}
+
+.Search-Button .Search-Tooltip, 
+.Voice-Search-Button .Voice-Tooltip,
+.Upload-Box .Upload-Tooltip,
+.Apps-Box .Tooltip,
+.Notifications-Box .Notifications-Tooltip {
+    font-size: 1;
+    font-family: Roboto;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    border-radius: 2px;
+
+    bottom: -40px;
+    opacity: 0;
+    pointer-events: None;
+    white-space: nowrap;
+}
+
+.Search-Button:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.Search-Button:hover .Search-Tooltip,
+.Voice-Search-Button:hover .Voice-Tooltip,
+.Upload-Box:hover .Upload-Tooltip,
+.Apps-Box:hover:hover .Tooltip,
+.Notifications-Box:hover .Notifications-Tooltip {
+    opacity: 0.9;
+    transition: opacity 0.15s;
+}
+
+.Search-Icon {
+    height: 25px;
+}
+
+.Voice-Search-Button {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    
+}
+
+
+.Voice-Icon {
+    height: 24px;
+}
+
+.Upload-Icon {
+    height: 30px;
+}
+
+.Apps-Icon {
+    height: 30px;
+}
+
+.Notifications-Icon {
+    height: 30px;
+}
+
+.Notifications-Box {
+    position: relative;
+}
+
+.Notifications-Count {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    color: white;
+    background-color: #cc0000;
+    font-size: 10px;
+    font-family: Roboto, Arial;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 15px;
+}
+
+.MyProfilePicture {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.Sidebar {
+    width: 70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.Sidebar-Button {
+    background-color: white;
+    height: 75px;
+    width: 100%;
+    margin-bottom: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.Sidebar-Button:hover {
+    background-color: rgb(230, 227, 227);
+}
+
+.Sidebar-Text {
+    font-size: 8px;
+    font-family: Roboto, Arial;
+}
+
+.Sidebar-Icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
